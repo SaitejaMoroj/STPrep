@@ -1,6 +1,9 @@
-'use client';
-import React, { useState } from 'react';
-import { useForm } from 'react-hook-form';
+"use client";
+
+import React, { useState } from "react";
+import { useRouter } from "next/navigation";
+import { useForm } from "react-hook-form";
+
 import {
   Eye,
   EyeOff,
@@ -14,9 +17,9 @@ import {
   TrendingUp,
   Users,
   Zap,
-} from 'lucide-react';
-import Link from 'next/link';
-import { useRouter } from 'next/navigation';
+} from "lucide-react";
+
+import Link from "next/link";
 
 
 
