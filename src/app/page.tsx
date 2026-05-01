@@ -1,5 +1,4 @@
-import React from 'react';
-import LoginPageClient from './components/LoginPageClient';
+import LoginPageClient from '../components/LoginPageClient';
 
 export default function LoginPage() {
   return <LoginPageClient />;
