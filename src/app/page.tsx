@@ -1,5 +1,5 @@
 import LoginPageClient from './components/LoginPageClient';
 
-export default function LoginPage() {
+export default function Page() {
   return <LoginPageClient />;
 }

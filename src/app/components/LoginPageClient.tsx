@@ -1,8 +1,6 @@
 'use client';
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
-import AppLogo from '@/components/ui/AppLogo';
-import Badge from '@/components/ui/Badge';
 import {
   Eye,
   EyeOff,
@@ -19,7 +17,7 @@ import {
 } from 'lucide-react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import Icon from '@/components/ui/AppIcon';
+
 
 
 type Role = 'admin' | 'teacher' | 'student' | 'parent';
@@ -152,7 +150,7 @@ export default function LoginPageClient() {
 
         {/* Logo */}
         <div className="relative flex items-center gap-3 mb-12">
-          <AppLogo size={40} />
+          <div className="text-white font-bold text-xl">STPREP AI 🚀</div>
           <div>
             <span className="font-bold text-xl text-white tracking-tight">
               ExamEdge <span className="text-blue-300">AI</span>
@@ -220,7 +218,7 @@ export default function LoginPageClient() {
       <div className="flex-1 flex flex-col items-center justify-center px-6 py-10 overflow-y-auto scrollbar-thin">
         {/* Mobile logo */}
         <div className="flex lg:hidden items-center gap-2 mb-8">
-          <AppLogo size={32} />
+          <div className="font-bold text-lg">STPREP AI 🚀</div>
           <span className="font-bold text-lg text-foreground">
             ExamEdge <span className="text-primary">AI</span>
           </span>
@@ -412,9 +410,9 @@ export default function LoginPageClient() {
                   key={`demo-${cred.role}`}
                   className="flex items-center gap-3 px-3 py-2.5 hover:bg-muted/50 transition-colors"
                 >
-                  <Badge variant={roleBadgeVariant[cred.role]} className="flex-shrink-0">
-                    {cred.label}
-                  </Badge>
+                  <span className="px-2 py-1 text-xs bg-blue-500 text-white rounded">
+  {cred.label}
+</span>
                   <div className="flex-1 min-w-0">
                     <p className="text-[11px] font-mono text-foreground truncate">{cred.email}</p>
                   </div>
